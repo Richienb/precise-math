@@ -1,41 +1,41 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# precise-math [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/precise-math/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/precise-math)
 
-My awesome module.
+Perform precise math operations without floating point errors.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/precise-math.png)](https://npmjs.com/package/precise-math)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install precise-math
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module")
+const { add } = require("precise-math")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+console.log(0.2 + 0.1 + 0.05)
+//=> 0.35000000000000003
+
+console.log(add(0.2, 0.1, 0.05))
+//=> 0.35
 ```
 
 ## API
 
-### theModule(input, options?)
+### add(...numbers)
 
-#### input
+### subtract(...numbers)
 
-Type: `string`
+### multiply(...numbers)
 
-Lorem ipsum.
+### divide(...numbers)
 
-#### options
+### modulo(...numbers)
 
-Type: `object`
+#### numbers
 
-##### postfix
+Type: `numbers`
 
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The numbers to perform the math operation on.

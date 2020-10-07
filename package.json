@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "precise-math",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Perform precise math operations without floating point errors.",
+	"repository": "https://github.com/Richienb/precise-math.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,8 +17,22 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"math",
+		"decimal",
+		"integer",
+		"floating",
+		"point",
+		"extra",
+		"add",
+		"subtract",
+		"divide",
+		"multiply",
+		"modulo"
+	],
+	"dependencies": {
+		"big.js": "^6.0.1"
+	},
 	"devDependencies": {
 		"ava": "^3.13.0",
 		"eslint-config-richienb": "^0.5.0",

@@ -1,15 +1,25 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
-@example
-```
-const theModule = require("the-module")
-
-theModule("unicorns")
-//=> "unicorns & rainbows"
-```
+Get the sum of the given numbers.
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+export declare function add(...numbers: number[]): number
 
-export = theModule
+/**
+Subtract the given numbers, one after the other.
+*/
+export declare function subtract(...numbers: number[]): number
+
+/**
+Multiply the given numbers together.
+*/
+export declare function multiply(...numbers: number[]): number
+
+/**
+Divide the given numbers, one after the other.
+*/
+
+export declare function divide(...numbers: number[]): number
+
+/**
+Get the modulo of the given numbers, one after the other.
+*/
+export declare function modulo(...numbers: number[]): number
