@@ -1,6 +1,6 @@
 {
 	"name": "precise-math",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Perform precise math operations without floating point errors.",
 	"repository": "https://github.com/Richienb/precise-math.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
